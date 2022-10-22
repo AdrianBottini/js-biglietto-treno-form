@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"defer></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="col box_info m-auto bg-dark text-white p-4">
+        <form action="" class="d-flex flex-column p-5">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" name="name" id="name" placeholder="scrivi qui">
+            <label for="km">Kilometri da percorrere</label>
+            <input type="number" name="km" id="km" placeholder="Scrivi qui">
+            <label for="age">Fascia d'età</label>
+            <select name="age" id="age" form="age">
+                <option value="none">---</option>
+                <option value="min">Minorenne</option>
+                <option value="max">Maggiorenne</option>
+                <option value="over">Over 65</option>
+            </select>
+        </form>
+        <div class="btn btn-success">Conferma</div>
+        <div class="btn btn-danger">Annulla</div>
+    </div>
+    <div class="row container mt-5">
+        <div class="col m-auto bg-dark text-white p-4 show">
+            <h2>Dettagli del passeggero</h2>
+            <div class="ticket_box container bg-light text-black">
+                <!-- <div id="name" value=""></div> -->
+                <div class="box_ticket"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
