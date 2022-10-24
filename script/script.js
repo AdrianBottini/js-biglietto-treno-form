@@ -3,7 +3,7 @@ const eleKm = document.querySelector("#km");
 const eleAge = document.querySelector("#age");
 const eleBox = document.querySelector("#box_info");
 const eleBoxTicket = document.querySelector(".box_ticket");
-const eleConferma = document.querySelector(".btn-succes");
+const eleConferma = document.querySelector(".btn-success");
 const eleDelete = document.querySelector(".btn-danger");
 
 eleConferma.addEventListener('click', function () {
@@ -23,7 +23,22 @@ eleConferma.addEventListener('click', function () {
     } else {
         let totalPrice = basePrice - basePrice * discount / 100;
         totalPrice = parseFloat(totalPrice.toFixed(2));
-        eleBoxTicket.innerHTML = ('Questo è il prezzo del tuo biglietto: ${totalPrice}€. Fai buon viaggio!');
+        eleBoxTicket.innerHTML = (`Questo è il prezzo del tuo biglietto: ${totalPrice} €.`);
+       
+        const fullName = eleName.value;
+        const userName = document.querySelector('.ticket_name');
+        userName.innerHTML = (`${fullName}` );
+       
+        const eleWagon = document.querySelector('.wagon');
+        numberWagon = Math.floor(Math.random() * 100);
+        eleWagon.innerHTML = (`Vagone: ${numberWagon}`);
+
+        const eleCode = document.querySelector('.code');
+        numberCode = Math.floor(Math.random() * 1000000);
+        eleCode.innerHTML = (`Codice CP: n°${numberCode}`);
+
+        const eleSweet = document.querySelector('.sweet');
+        eleSweet.innerHTML = ('Buon viaggio');
     }
 });
 
